@@ -15,7 +15,7 @@
                     <field name="date_deadline"/>
                     <field name="is_date_livraison"/>
                 </field>
-                <xpath expr="//page[@name='components']/field/tree/field[@name='manual_consumption']" position="after">
+                <xpath expr="//page[@name='components']/field/list/field[@name='quantity']" position="after">
                     <field 
                         name="is_manquant" optional="show"
                         decoration-warning="is_manquant &lt; 0"
@@ -32,7 +32,7 @@
             <field name="model">mrp.production</field>
             <field name="inherit_id" ref="mrp.mrp_production_tree_view"/>
             <field name="arch" type="xml">               
-               <field name="date_planned_start"  position="after">
+               <field name="date_start"  position="after">
                     <field name="is_date_planifiee" optional="show"/>
                     <field name="is_duree" widget="float_time" optional="show"/>
                 </field>
@@ -40,7 +40,7 @@
                     <field name="is_date_livraison" optional="show"/>
                 </field>
                <field name="origin"  position="after">
-                    <field name="is_sale_id" widget="many2one_clickable" optional="show"/>
+                    <field name="is_sale_id" widget="many2one" optional="show"/>
                 </field>
             </field>
         </record>
