@@ -19,9 +19,11 @@ Reprise d'is_dynamicmotion (Odoo 16).
         'mrp',          # mrp.production
     ],
     'data' : [
+        "security/res.groups.xml",
         "views/sale_order_view.xml",
         "views/stock_picking_view.xml",
         "views/mrp_view.xml",
+        "views/menu.xml",
         # Migration v20 : rapports désactivés pour installer d'abord les modèles et les vues
         # "report/report_deliveryslip.xml",
         # "report/report_etiquette_colis.xml",
