@@ -15,10 +15,10 @@ class mrp_production(models.Model):
     is_duree          = fields.Float(string='Durée', default=4)
 
 
-    @api.depends('date_planned_start')
+    @api.depends('date_start')
     def _compute_is_date_planifiee(self):
         for obj in self:
-            obj.is_date_planifiee = obj.date_planned_start
+            obj.is_date_planifiee = obj.date_start
 
 
     @api.depends('origin')
