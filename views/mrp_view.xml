@@ -53,8 +53,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//calendar" position="attributes">
                     <attribute name="date_start">is_date_planifiee</attribute>
-                    <attribute name="date_stop"/>
-                    <attribute name="date_delay">is_duree</attribute>
+                    <attribute name="date_stop">is_date_fin</attribute>
                     <attribute name="color">user_id</attribute>
                 </xpath>
                
