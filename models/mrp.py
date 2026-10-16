@@ -61,3 +61,16 @@ class mrp_production(models.Model):
                 sale = self.env['sale.order'].search([('name', '=', sale_name)], limit=1)
                 sale_id = sale.id if sale else False
             obj.is_sale_id = sale_id
+
+
+# Instructions des opérations : champ note d'Odoo 16 (fiche de travail de type texte) supprimé en v20
+class mrp_routing_workcenter(models.Model):
+    _inherit = "mrp.routing.workcenter"
+
+    is_instructions = fields.Html(string="Instructions")
+
+
+class mrp_workorder(models.Model):
+    _inherit = "mrp.workorder"
+
+    is_instructions = fields.Html(related="operation_id.is_instructions")
