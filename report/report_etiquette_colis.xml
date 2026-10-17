@@ -6,7 +6,9 @@
                 <t t-foreach="docs" t-as="o">
                     <t>
                         <div class="page">
-                            <div class="row">
+                            <!-- Planches prédécoupées : interligne de l'adresse de la v16 (lh-sm = 1.25 en v20 dans base.contact) -->
+                            <style>.is_etiquette_colis .lh-sm { line-height: 1.5 !important; }</style>
+                            <div class="row is_etiquette_colis">
                                 <div class="col-1"/>
                                 <div class="col-6">
                                     <span><strong>Expéditeur / Ship FROM :</strong></span>
