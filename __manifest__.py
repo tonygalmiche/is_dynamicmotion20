@@ -29,6 +29,10 @@ Reprise d'is_dynamicmotion (Odoo 16).
         'mrp_repair',                   # réparations (26)
         'stock_delivery',               # méthodes de livraison (5, sur 3 commandes)
         'hr',                           # employés (ordres de travail et temps passés des OF)
+
+        # Menus masqués (views/menu.xml)
+        'mail',                         # Discussion
+        'utm',                          # Tracker de liens
     ],
     'data' : [
         "security/res.groups.xml",
@@ -36,9 +40,8 @@ Reprise d'is_dynamicmotion (Odoo 16).
         "views/stock_picking_view.xml",
         "views/mrp_view.xml",
         "views/menu.xml",
-        # Migration v20 : rapports désactivés pour installer d'abord les modèles et les vues
-        # "report/report_deliveryslip.xml",
-        # "report/report_etiquette_colis.xml",
+        "report/report_deliveryslip.xml",
+        "report/report_etiquette_colis.xml",
     ],
     'installable': True,
     'application': True,
