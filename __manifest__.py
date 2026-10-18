@@ -17,6 +17,7 @@ Reprise d'is_dynamicmotion (Odoo 16).
         'sale_management',
         'sale_stock',   # sale_line_id sur stock.move
         'mrp',          # mrp.production
+        'is_theme_entreprise',  # couleur de l'entreprise (module générique)
 
         # Applications utilisées en v16, à installer pour la reprise des données
         # (hors périmètre : feuilles de temps, présences, congés)
