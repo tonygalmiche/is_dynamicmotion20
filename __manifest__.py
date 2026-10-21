@@ -43,6 +43,7 @@ Reprise d'is_dynamicmotion (Odoo 16).
         "views/menu.xml",
         "report/report_deliveryslip.xml",
         "report/report_etiquette_colis.xml",
+        "data/ir_module_module.xml",
     ],
     'installable': True,
     'application': True,
