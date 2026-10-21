@@ -12,5 +12,7 @@
         <field name="name">Accès API n8n</field>
         <field name="privilege_id" ref="privilege_n8n"/>
         <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        <!-- Clé API jusqu'à 1 an (90 jours pour Utilisateur interne : choix limité à 1 jour ou 1 mois) -->
+        <field name="api_key_duration">365</field>
     </record>
 </odoo>
