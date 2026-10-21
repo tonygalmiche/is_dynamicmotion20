@@ -1,0 +1,43 @@
+id,name,model_id,group_id/id,operation,domain
+n8n_res_partner,n8n : contacts,res.partner,group_n8n,cru,
+n8n_crm_lead,n8n : pistes,crm.lead,group_n8n,cru,
+n8n_crm_stage,n8n : étapes CRM,crm.stage,group_n8n,r,
+n8n_crm_tag,n8n : étiquettes CRM,crm.tag,group_n8n,r,
+n8n_crm_team,n8n : équipes commerciales,crm.team,group_n8n,r,
+n8n_sale_order,n8n : commandes,sale.order,group_n8n,r,
+n8n_sale_order_line,n8n : lignes de commandes,sale.order.line,group_n8n,r,
+n8n_account_move,n8n : factures et avoirs clients,account.move,group_n8n,r,"[('move_type', 'in', ('out_invoice', 'out_refund'))]"
+n8n_account_move_line,n8n : lignes des factures et avoirs clients,account.move.line,group_n8n,r,"[('move_id.move_type', 'in', ('out_invoice', 'out_refund'))]"
+n8n_product_template,n8n : articles,product.template,group_n8n,r,
+n8n_product_product,n8n : variantes,product.product,group_n8n,r,
+n8n_unlink_calendar_alarm,n8n : pas de suppression,calendar.alarm,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_calendar_alarm_manager,n8n : pas de suppression,calendar.alarm_manager,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_calendar_attendee,n8n : pas de suppression,calendar.attendee,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_calendar_event,n8n : pas de suppression,calendar.event,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_calendar_filters,n8n : pas de suppression,calendar.filters,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_calendar_recurrence,n8n : pas de suppression,calendar.recurrence,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_calendar_user,n8n : pas de suppression,calendar.user,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_discuss_channel_member,n8n : pas de suppression,discuss.channel.member,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_discuss_gif_favorite,n8n : pas de suppression,discuss.gif.favorite,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_hr_employee_location,n8n : pas de suppression,hr.employee.location,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_ir_attachment,n8n : pas de suppression,ir.attachment,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_ir_default,n8n : pas de suppression,ir.default,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_ir_embedded_actions,n8n : pas de suppression,ir.embedded.actions,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_ir_exports_line,n8n : pas de suppression,ir.exports.line,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_ir_filters,n8n : pas de suppression,ir.filters,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_mail_activity,n8n : pas de suppression,mail.activity,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_mail_canned_response,n8n : pas de suppression,mail.canned.response,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_mail_message,n8n : pas de suppression,mail.message,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_mail_scheduled_message,n8n : pas de suppression,mail.scheduled.message,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_mail_template,n8n : pas de suppression,mail.template,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_project_tags,n8n : pas de suppression,project.tags,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_project_task,n8n : pas de suppression,project.task,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_project_task_stage_personal,n8n : pas de suppression,project.task.stage.personal,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_project_task_type,n8n : pas de suppression,project.task.type,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_report_layout,n8n : pas de suppression,report.layout,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_res_users_settings,n8n : pas de suppression,res.users.settings,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_res_users_settings_embedded_action,n8n : pas de suppression,res.users.settings.embedded.action,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_res_users_settings_volumes,n8n : pas de suppression,res.users.settings.volumes,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_resource_calendar_leaves,n8n : pas de suppression,resource.calendar.leaves,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_return_reason,n8n : pas de suppression,return.reason,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"
+n8n_unlink_stock_move_line,n8n : pas de suppression,stock.move.line,,d,"[(0, '=', 1)] if user.has_group('is_dynamicmotion20.group_n8n') else [(1, '=', 1)]"

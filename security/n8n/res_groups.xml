@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="res.groups.privilege" id="privilege_n8n">
+        <field name="name">Accès API n8n</field>
+        <field name="sequence">20</field>
+        <field name="category_id" ref="module_is_dynamicmotion"/>
+    </record>
+
+    <!-- Seul groupe de l'utilisateur technique n8n-integration (clé API) : implique seulement Utilisateur interne,
+         aucun groupe Ventes, CRM ni Comptabilité (les droits d'accès s'additionnent) ; droits dans ir.access.csv -->
+    <record id="group_n8n" model="res.groups">
+        <field name="name">Accès API n8n</field>
+        <field name="privilege_id" ref="privilege_n8n"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+</odoo>

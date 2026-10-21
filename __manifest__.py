@@ -37,6 +37,8 @@ Reprise d'is_dynamicmotion (Odoo 16).
     ],
     'data' : [
         "security/res.groups.xml",
+        "security/n8n/res_groups.xml",      # accès API n8n : groupe de l'utilisateur technique
+        "security/n8n/ir.access.csv",       # accès API n8n : droits, et aucune suppression
         "views/sale_order_view.xml",
         "views/stock_picking_view.xml",
         "views/mrp_view.xml",
